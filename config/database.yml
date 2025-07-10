@@ -32,4 +32,4 @@ test:
 
 production:
   <<: *default
-  database: mastermind_backend_production
+  url: <%= ENV['DATABASE_URL'] %>
